@@ -47,6 +47,7 @@ module TeachersPet
           puts "#{remote} --> #{remotes_to_add[remote]}"
           `git remote add #{remote} #{remotes_to_add[remote]}`
           `git push #{remote} master`
+          `git push #{remote} --tags`
         end
       end
 
